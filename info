@@ -1,0 +1,24 @@
+Terrafom + CLoud AWS 
+
+files terraform (.tf)
+
+providers.tf
+variables.tf
+output.tf 
+main.tf 
+
+++modules 
+exmemple aws : 
+provider : aws 
+ressources : 
+
+
+terraform init: Initializes a new or existing Terraform configuration, downloading any necessary plugins.
+
+terraform plan: Generates an execution plan showing what Terraform will do when you apply your configuration. It shows the changes Terraform will make to your infrastructure.
+
+terraform apply: Applies the changes described in your Terraform configuration. It creates, updates, or deletes resources to match the desired state.
+
+terraform destroy: Destroys all the resources defined in your Terraform configuration. Be careful, as this command will delete resources without confirmation.
+
+terraform validate: Validates the syntax and configuration of your Terraform files.
