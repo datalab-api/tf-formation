@@ -1,9 +1,16 @@
-# resource "aws_vpc" "my_vpc" {
-#   cidr_block = "10.0.0.0/16"
-#   instance_tenancy = "default"
-#   enable_dns_hostnames = true
-#   enable_dns_support = true
-# }
+
+
+module "vpc" {
+  source = "./modules/vpc"
+  region = var.aws_region
+}
+
+resource "aws_instance" "my-instance" {
+  ami           = module.vpc.ami_id
+  subnet_id     = module.vpc.subnet_id
+  instance_type = "t2.micro"
+}
+
 
 module "vpc" {
   source = "github.com/terrablocks/aws-vpc.git"
