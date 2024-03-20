@@ -7,11 +7,11 @@ terraform {
   }
 }
 
-# Configure the AWS Provider
+# Configure the AWS provider
 provider "aws" {
-  region     = var.aws_region
   profile = "default"
-
+  region  = var.aws_region  #Or
+  #credentials = file("~/.aws/credentials")
 }
 
 
