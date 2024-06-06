@@ -2,13 +2,6 @@
 ## Introduction
 Terraform modules are a good way to abstract out repeated chunks of code, making it reusable across other Terraform projects and configurations. In this hands-on lab, we'll be writing a basic Terraform module from scratch and then testing it out.
 
-## Solution
-
-Log in to the lab server using the credentials provided:
-```bash
-ssh user@<Terraform-Controller>
-```
-
 ## Create the Directory Structure for the Terraform Project
 
 1. **Check the Terraform status using the version command:** :
