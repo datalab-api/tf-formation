@@ -39,6 +39,7 @@ cd /home/cloud_user/terraform_project/modules/vpc/
 
 `vim main.tf`
 In the file, insert and review the provided code:
+
 ```bash
 provider "aws" {
   region = var.region
@@ -114,7 +115,8 @@ vim main.tf
 
 In the file, insert and review the provided code:
 
-```bash variable "main_region" {
+```bash
+variable "main_region" {
   type    = string
   default = "us-east-1"
 }
